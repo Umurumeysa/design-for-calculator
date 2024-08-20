@@ -1,0 +1,73 @@
+.calculator
+{
+display: grid;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+background:white;
+
+
+
+
+
+}
+.output{
+  font-size: 2rem;
+  text-align: end;
+  background:#BABAB5;
+  padding-block-start: 0.25rem; 
+  padding-block-end: 0.25rem; 
+  padding-inline-end: 0.75rem;
+}
+.keys{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  background: hsl(255, 100%, 100%);
+  .keys :hover, key:focus {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+    outline: none;
+    
+  }
+
+
+  
+  
+ 
+}
+.key--enter{
+    grid-column: 4 / 5; 
+    grid-row: 2 / span 4;
+    border: none;
+    background: hsl(191, 100%, 72%);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+    inline-size: 60px;
+    block-size: 60px;
+    border-radius: 40px;
+    height: auto;
+   
+}
+.key{
+   
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+    inline-size: 60px;
+    block-size: 60px;
+    border-radius: 40px;
+    grid-gap: 2px;
+    color: hsl(203, 39%, 61%);
+    margin: 0.01rem;
+}
+.operator{
+    padding-block-start: 0.5rem; 
+    padding-block-end: 0.5rem; 
+    padding-inline-start: 1.25rem; 
+    padding-inline-end: 1.25rem; 
+    font-size: 1.5rem;
+    border: none;
+    background: hsl(208, 25%, 86%);
+
+}
